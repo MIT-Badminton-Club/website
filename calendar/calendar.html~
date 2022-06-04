@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : Accumen
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20120712
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta property="og:description" content="Profile of MIT Badminton" />
+		<meta name="keywords" content="" />
+
+		<title>MIT Badminton</title>
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
+<link rel="icon" href="../im/favicon.ico" type="image/x-icon"/>
+		<link href="http://fonts.googleapis.com/css?family=Kreon" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="../style.css" />
+	</head>
+	<body>
+		<div id="wrapper">
+<A HREF="../index.html">
+<IMG SRC="../im/banner_new.png" BORDER="0" WIDTH="950" ALT="MIT Badminton">
+</A>
+			<div id="header">
+				<div id="menu">
+					<ul>
+						<li class="first"><a href="../index.html">Home</a></li>
+						<li><a href="../faqs.html">Joining</a></li>
+						<li><a href="../about.html">About</a></li>
+						<li><a href="../news.html">News</a></li>
+						<li class="last active"><a href="calendar.html">Calendar (MIT cert required)</a></li>
+					</ul>
+					<br class="clearfix" />
+				</div>
+			</div>
+			<div id="page">
+				<div class="box">
+
+					<p>
+					Below is the schedule for MIT Badminton club trainings and game nights. Typically, once a week, we will have an external coach provide hour-long group coachings to two groupings of players based on skill level. Groups are assigned by the officers. On the weekend, the MIT Badminton club has court times for its members to play recreationally. This is independent of the open rec court times that the Z-center offers, and only MIT club members (i.e. those that have filled out the online waiver and paid club dues) are eligible to use the MIT badminton club courts. <br />
+					
+
+
+			
+
+<IMG SRC="Feb2018.png" BORDER="0" WIDTH="600" ALT="Feb">
+<IMG SRC="Mar2018.png" BORDER="0" WIDTH="600" ALT="Mar"><br />
+<IMG SRC="Apr2018.png" BORDER="0" WIDTH="600" ALT="Apr">
+<IMG SRC="May2018.png" BORDER="0" WIDTH="600" ALT="May"><br />
+ </p>
+				</div>
+
+<br /><br /><br /><br />
+			
+				<br class="clearfix" />
+			</div>
+	</body>
+
+</html>

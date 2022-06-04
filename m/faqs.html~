@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>About</title>
+<link rel="icon" href="im/favicon.ico" type="image/x-icon"/>
+    <link href="css/style.css"rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div id="header">
+        <div class="nav">
+        	<ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="faqs.html">Joining</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="https://web.mit.edu/mitbac/www/calendar/calendar.html">Calendar</a></li>
+
+            </ul>
+        </div>
+        <div class="logo"><a href="index.html"><img src="im/banner_trans2.png" alt="MIT Badminton Logo" /></a></div>
+    </div>
+    <div class="clear"></div>
+ <p>
+
+TL;DR: please 1) do the <a href="http://clubsports.mit.edu/join-a-club/">online waiver</a>, 2) pay $20 in club dues at your first or second practice. <br /> 
+ <br />
+					The MIT Badminton club is only open to MIT affiliates (students, alum, faculty, staff, or spouse of any of the above). These rules are set by the Club Sports Council at MIT and cannot be waived. For members of the general public who would like to play badminton at MIT, you may find the open recreational schedule <a href="http://web.mit.edu/athletics/www/recschedule.pdf">here</a>. These hours are updated weekly, and are <strong>not</strong> linked to the MIT Badminton Club in any way. <br /> 
+<br /> 
+Joining the MIT badminton club involves paying club dues of <strong>$20 each semester</strong> to encourage regular attendance to practices. Please make this out as a cheque to MIT Badminton Club OR bring as cash to your first or second practice. The club generally meets on <strong>Tuesday and Thursday evenings</strong>. Alternatively, you can contact us (mitcbac-officers[at]mit.edu) to set up a time to drop it off on campus.<br /> 
+<br /> 
+Due to damage to the Rockwell Cage floor, <strong>only players with non-marking soles will be allowed to play</strong> during club times. If you are not sure about your shoes, please ask a club officer. To prevent injury to players, we will not allow players with non-athletic attire (e.g. jeans) to play during club-reserved times.<br /> 
+<br /> 
+Club Sports has introduced a new online waiver system (<a href="http://clubsports.mit.edu/join-a-club/">click here to fill it out</a>) - please note that due to MIT regulations, <strong>you will not be allowed to play unless you have completed the online waiver</strong>. The new online waiver is different to last year's, and so all players, including returning ones, should complete this waiver online once per year.<br /> 
+<br /> 
+We will add you to the mailing list once we have received your club dues.<br /> 
+<br /> 
+
+					<br /> 
+You can contact us with any questions at mitcbac-officers[at]mit.edu.
+
+				</div>
+</body>
+</html>

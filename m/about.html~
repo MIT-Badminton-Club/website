@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>About</title>
+<link rel="icon" href="im/favicon.ico" type="image/x-icon"/>
+    <link href="css/style.css"rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div id="header">
+        <div class="nav">
+        	<ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="faqs.html">Joining</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="https://web.mit.edu/mitbac/www/calendar/calendar.html">Calendar</a></li>
+
+            </ul>
+        </div>
+        <div class="logo"><a href="index.html"><img src="im/banner_trans2.png" alt="MIT Badminton Logo" /></a></div>
+    </div>
+    <div class="clear"></div>
+ <p>
+					The MIT Badminton club's mission is to help improve players from all skill levels. To do this, we are coached once a week by <a href="https://en.wikipedia.org/wiki/Pashupati_Paneru">Pashupati Paneru</a>, a retired badminton player who has formerly represented Nepal internationally. Club officers also lead drills for players who are seeking to improve their play. Players who are simply seeking a recreational playing experience should play during the general <a href = "http://web.mit.edu/athletics/www/recschedule.pdf">open recreational times</a> (<strong>not</strong> affiliated with MIT Badminton Club) available to the general public. The club is also grateful to Daphne Chang, who helps with managing the team. <br /> 
+ <br /> 
+The club officers for the 2017-18 year are: <br /> 
+
+President: Shawn Chao ('21) <br /> 
+Vice-President: Vishal Patil (PhD, Math)<br /> 
+Treasurer: Jeffrey Mei (PhD, ME) <br /> 
+ <br /> 
+<IMG SRC="im/officers.png" BORDER="0" WIDTH="300" ALT="officers"><br />
+Officers for 2017-18, from left: Jeffrey Mei, Reetik Sahu, Alex Ji
+
+ <br /> 
+You can contact us at mitcbac-officers[at]mit[dot]edu. <br /> 
+
+
+				</div>
+</body>
+</html>

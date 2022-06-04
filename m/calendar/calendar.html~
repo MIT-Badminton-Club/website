@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Calendar</title>
+<link rel="icon" href="im/favicon.ico" type="image/x-icon"/>
+    <link href="../css/style.css"rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div id="header">
+        <div class="nav">
+        	<ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../faqs.html">Joining</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../news.html">News</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+
+            </ul>
+        </div>
+        <div class="logo"><a href="../index.html"><img src="../im/banner_trans2.png" alt="MIT Badminton Logo" /></a></div>
+    </div>
+    <div class="clear"></div>
+    <p>
+					Below is the schedule for MIT Badminton club trainings and game nights. Typically, once a week, we will have an external coach provide hour-long group coachings to two groupings of players based on skill level. Groups are assigned by the officers. On the weekend, the MIT Badminton club has court times for its members to play recreationally. This is independent of the open rec court times that the Z-center offers, and only MIT club members (i.e. those that have filled out the online waiver and paid club dues) are eligible to use the MIT badminton club courts. <br />
+					
+
+
+			
+
+<IMG SRC="Feb2018.png" BORDER="0" WIDTH="600" ALT="Feb"><br />
+<IMG SRC="Mar2018.png" BORDER="0" WIDTH="600" ALT="Mar"><br />
+<IMG SRC="Apr2018.png" BORDER="0" WIDTH="600" ALT="Apr"><br />
+<IMG SRC="May2018.png" BORDER="0" WIDTH="600" ALT="May"><br />
+ </p>
+        </div>
+</body>
+</html>
