@@ -296,3 +296,53 @@ a {
 	border: solid 10px #000000;
 	border-top: 0;
 }
+
+
+/* Dashed border */
+hr.dashed {
+	border-top: 3px dashed #bbb;
+  }
+  
+  /* Dotted border */
+  hr.dotted {
+	border-top: 3px dotted #bbb;
+  }
+  
+  /* Solid border */
+  hr.solid {
+	border-top: 3px solid #bbb;
+  }
+  
+  /* Rounded border */
+  hr.rounded {
+	border-top: 8px solid #bbb;
+	border-radius: 5px;
+  }
+
+  .image-container {
+	float: left;
+	display: flex;
+	flex-wrap: auto;
+	max-width: 800px;
+	align-content: center;
+	margin-left: 15%;
+  }
+  
+  .officers-container {
+	flex: 2 2 50%;
+	padding: 0px 1rem;
+	box-sizing: initial;
+  }
+  
+  img.cat {
+	width: 100%;
+	height: 160px;
+  }
+  
+  .caption {
+	font-size: 20px;
+	text-align: center;
+	font-family: Lato, sans-serif;
+	line-height: 1.75em;
+	color: #000000;
+  }
