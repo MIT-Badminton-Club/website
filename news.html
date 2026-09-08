@@ -6,163 +6,332 @@
 -->
 <html>
 	<head>
-		<title>News</title>
+		<title>News &mdash; MIT Badminton Club</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="icon" href="im/favicon.ico" type="image/x-icon"/>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Nav accent (matches other pages) */
+			#nav {
+				position: relative !important;
+			}
+			#nav .links a {
+				transition: color 0.2s ease;
+			}
+			#nav .links a:hover {
+				color: #ff5f6d;
+			}
+			#nav .links li.active a {
+				color: #ff5f6d;
+				border-bottom-color: #ff5f6d;
+			}
+
+			.join-btn {
+				position: absolute;
+				right: 1.5em;
+				top: 50%;
+				transform: translateY(-50%);
+				background: #A31F34;
+				color: #ffffff !important;
+				padding: 1rem 2rem;
+				border-radius: 5px;
+				font-size: 0.8em;
+				font-weight: 700;
+				text-decoration: none !important;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+				line-height: 1;
+				transition: background 0.2s ease;
+				border-bottom: none !important;
+			}
+
+			.join-btn:hover {
+				background: #b8253d;
+				color: #ffffff !important;
+			}
+
+			@media (max-width: 736px) {
+				.join-btn {
+					display: none;
+				}
+			}
+
+			/* News page */
+			.news-header {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				padding: 3em 1em 0.5em !important;
+				text-align: center;
+				width: 100%;
+				box-sizing: border-box;
+				border-bottom: none;
+				border-top: none !important;
+			}
+
+			.news-header h1 {
+				font-size: 3em;
+				letter-spacing: 0.08em;
+				margin: 0;
+				text-align: center;
+			}
+
+			.news-grid {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				gap: 1.5em;
+				padding: 1.5em 3em 4em !important;
+				max-width: 1200px;
+				margin: 0 auto !important;
+				border-top: none !important;
+				box-sizing: border-box;
+			}
+
+			.news-card {
+				background: #f8f8f8;
+				border-radius: 10px;
+				overflow: hidden;
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+				display: flex;
+				flex-direction: column;
+				transition: transform 0.25s ease, box-shadow 0.25s ease;
+			}
+
+			.news-card:hover {
+				transform: translateY(-3px);
+				box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
+			}
+
+			.news-card .thumb {
+				width: 100%;
+				height: 220px;
+				overflow: hidden;
+				background: #1e252d;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.news-card .thumb img {
+				max-width: 100%;
+				max-height: 100%;
+				width: auto;
+				height: auto;
+				display: block;
+				object-fit: contain;
+			}
+
+			.news-card .content {
+				padding: 1.1em 1.4em 1.3em;
+				display: flex;
+				flex-direction: column;
+				flex: 1;
+			}
+
+			.news-card .date {
+				font-size: 0.7em;
+				letter-spacing: 0.2em;
+				text-transform: uppercase;
+				color: #A31F34;
+				font-weight: 700;
+				margin-bottom: 0.5em;
+				display: block;
+			}
+
+			.news-card h2 {
+				font-size: 1.05em;
+				font-weight: 700;
+				color: #1e252d;
+				margin: 0 0 0.6em 0;
+				line-height: 1.35;
+				letter-spacing: 0;
+			}
+
+			.news-card p {
+				font-size: 0.82em;
+				line-height: 1.6;
+				color: #444;
+				margin: 0;
+			}
+
+			.news-card a {
+				color: #A31F34;
+				border-bottom: 1px solid rgba(163, 31, 52, 0.4);
+				font-weight: 500;
+				transition: color 0.2s ease, border-bottom-color 0.2s ease;
+			}
+
+			.news-card a:hover {
+				color: #6b1422;
+				border-bottom-color: #6b1422;
+			}
+
+			#copyright {
+				padding: 2em 0;
+				opacity: 0.5;
+				font-size: 0.85em;
+				text-align: center;
+			}
+
+			@media (max-width: 736px) {
+				.news-header h1 {
+					font-size: 2.1em;
+				}
+				.news-grid {
+					grid-template-columns: 1fr;
+					padding: 1em 1.5em 3em !important;
+				}
+				.news-card .thumb {
+					height: 200px;
+				}
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper">
-			<!-- Header -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Header -->
 					<header id="header">
 					</header>
+
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
 							<li><a href="index.html">Home</a></li>
-							<li><a href="joining.html">Joining</a></li>
-							<li><a href="about.html">About</a></li>
+							<li><a href="leadership.html">Leadership</a></li>
 							<li class="active"><a href="news.html">News</a></li>
 						</ul>
+						<a href="https://docs.google.com/forms/d/e/1FAIpQLSf1-Em72Odya4hBaUSjalRbm5Xm7yGBwLyVjuFoneuM4ALf_w/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="join-btn">Join Us</a>
 					</nav>
 
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Post -->
-							<section class="post">
-								<header class="major">
+						<div class="news-header">
+							<h1>News</h1>
+						</div>
+
+						<div class="news-grid">
+
+							<div class="news-card">
+								<div class="thumb"><img src="im/WD_group.JPG" alt="" /></div>
+								<div class="content">
 									<span class="date">July 9, 2023</span>
-									<h1>2023 Bay State Games</h1>
-								</header>
-								<div class="image main"><img src="im/WD_group.JPG" alt=""/></div>
-								<p>
-									Congratulations to Audrey Mang for winning Women's Singles D and Women's Doubles D (with Linsey Nowack), and Sharon Hsia for 3rd place in Women's Singles B and Women's Doubles D (with Ziyu Xu), and Xiang Chen and Yiling Fan for 3rd place in Men's Doubles D at the <a href="https://www.tournamentsoftware.com/sport/winners.aspx?id=434da252-65df-488f-aa7f-f64668b73021">2023 Bay State Games badminton tournament</a>! 
-								</p>
-							</section>
-							<section class="post">
-								<header class="major">
+									<h2>2023 Bay State Games</h2>
+									<p>Congratulations to Audrey Mang for winning Women's Singles D and Women's Doubles D (with Linsey Nowack), Sharon Hsia for 3rd place in Women's Singles B and Women's Doubles D (with Ziyu Xu), and Xiang Chen and Yiling Fan for 3rd place in Men's Doubles D at the <a href="https://www.tournamentsoftware.com/sport/winners.aspx?id=434da252-65df-488f-aa7f-f64668b73021" target="_blank" rel="noopener noreferrer">2023 Bay State Games</a>!</p>
+								</div>
+							</div>
+
+							<div class="news-card">
+								<div class="thumb"><img src="im/KAG.jpg" alt="" /></div>
+								<div class="content">
 									<span class="date">June 19, 2023</span>
-									<h1>2023 Korean-American National Sports Festival</h1>
-								</header>
-								<div class="image main"><img src="im/KAG.jpg" alt=""/></div>
-								<p>
-									Congratulations to Audrey Mang for winning the Women's Singles event at the <a href="https://www.ny23.org/">Korean American National Sports Festival</a>! 
-								</p>
-							</section>
-							
-							<section class="post">
-								<header class="major">
+									<h2>2023 Korean-American National Sports Festival</h2>
+									<p>Congratulations to Audrey Mang for winning the Women's Singles event at the <a href="https://www.ny23.org/" target="_blank" rel="noopener noreferrer">Korean American National Sports Festival</a>!</p>
+								</div>
+							</div>
+
+							<div class="news-card">
+								<div class="thumb"><img src="im/newton2023.jpg" alt="" /></div>
+								<div class="content">
 									<span class="date">March 17, 2023</span>
-									<h1>2023 Newton Tournament</h1>
-								</header>
-								<div class="image main"><img src="im/newton2023.jpg" alt=""/></div>
-								<p>
-									Congratulations to Sharon Hsia for finishing runner up in the Women's Singles C division, Yao Mekareeya for making the semifinals of Men's Singles B, Audrey Mang/Alex Ji for making the semifinals of Mixed Doubles B/C, Shawn Chao for making the semifinals of Mixed Doubles B, and Shawn Chao and Jeffrey Mei for winning Men's Doubles B at the <a href="https://www.newtonma.gov/government/parks-recreation-culture/recreation-programs/badminton">Newton 2023 tournament</a>! 
-								</p>
-							</section>
-							
-							<section class="post">
-								<header class="major">
+									<h2>2023 Newton Tournament</h2>
+									<p>Congratulations to Sharon Hsia for finishing runner-up in Women's Singles C, Yao Mekareeya for making the semifinals of Men's Singles B, Audrey Mang/Alex Ji for semifinals of Mixed Doubles B/C, Shawn Chao for semifinals of Mixed Doubles B, and Shawn Chao and Jeffrey Mei for winning Men's Doubles B at the <a href="https://www.newtonma.gov/government/parks-recreation-culture/recreation-programs/badminton" target="_blank" rel="noopener noreferrer">Newton 2023 tournament</a>!</p>
+								</div>
+							</div>
+
+							<div class="news-card">
+								<div class="thumb"><img src="im/coleman2023.jpg" alt="" /></div>
+								<div class="content">
 									<span class="date">February 25, 2023</span>
-									<h1>2023 Coleman Cup tournament</h1>
-								</header>
-								<div class="image main"><img src="im/coleman2023.jpg" alt="" /></div>
-								<p>
-									Congratulations to the Andrew Lee, Joachim Dahl Thomsen, Shawn Chao and Jeffrey Mei for winning 3rd place in the <a href="https://www.tournamentsoftware.com/sport/tournament.aspx?id=87041F56-4089-4CC7-B7F7-5C1BCB11BDB2">Coleman Cup Division A tournament</a>!
-								</p>
-							</section>
-							<section class="post">
-								<header class="major">
+									<h2>2023 Coleman Cup Tournament</h2>
+									<p>Congratulations to Andrew Lee, Joachim Dahl Thomsen, Shawn Chao and Jeffrey Mei for winning 3rd place in the <a href="https://www.tournamentsoftware.com/sport/tournament.aspx?id=87041F56-4089-4CC7-B7F7-5C1BCB11BDB2" target="_blank" rel="noopener noreferrer">Coleman Cup Division A tournament</a>!</p>
+								</div>
+							</div>
+
+							<div class="news-card">
+								<div class="thumb"><img src="im/massbad2023.jpeg" alt="" /></div>
+								<div class="content">
 									<span class="date">February 18, 2023</span>
-									<h1>2023 MassBad Team Tournament</h1>
-								</header>
-								<div class="image main"><img src="im/massbad2023.jpeg" alt="" /></div>
-								<p>
-									Congratulations to Abhinandan Jain, Sharon Hsia, Hongwei Liu, Yi-Hsuan Hsiao, Alex Ji, Shawn Chao, Yao Mekareeya and Anand Chandrasekhar for finishing runner-up at the <a href="https://www.tournamentsoftware.com/sport/tournament.aspx?id=353D449D-6D79-480E-9693-2B561409B2B6">2023 MassBad Team Tournament Division C</a>!
-								</p>
-							</section>
-							<section class="post">
-								<header class="major">
+									<h2>2023 MassBad Team Tournament</h2>
+									<p>Congratulations to Abhinandan Jain, Sharon Hsia, Hongwei Liu, Yi-Hsuan Hsiao, Alex Ji, Shawn Chao, Yao Mekareeya and Anand Chandrasekhar for finishing runner-up at the <a href="https://www.tournamentsoftware.com/sport/tournament.aspx?id=353D449D-6D79-480E-9693-2B561409B2B6" target="_blank" rel="noopener noreferrer">2023 MassBad Team Tournament Division C</a>!</p>
+								</div>
+							</div>
+
+							<div class="news-card">
+								<div class="thumb"><img src="im/baystate2022.png" alt="" /></div>
+								<div class="content">
 									<span class="date">July 22, 2022</span>
-									<h1>2022 Bay State Games</h1>
-								</header>
-								<div class="image main"><img src="im/baystate2022.png" alt="" /></div>
-								<p>
-								Congratulations to Wei Hao Lee and Joachim Dahl Thomsen for winning Men's Doubles B, and Alex Ji for winning Men's Singles C at the <a href="https://www.tournamentsoftware.com/tournament/B5768A3D-A3E7-4677-931E-41D826BA30CA">2022 Bay State Games</a>! Also congratulations to Yao Mekareeya for a silver in Men's Singles B, and Sharon Hsia for her bronze in Women's Singles B!
-								</p>
-							</section>
-							
-							<section class="post">
-								<header class="major">
+									<h2>2022 Bay State Games</h2>
+									<p>Congratulations to Wei Hao Lee and Joachim Dahl Thomsen for winning Men's Doubles B, and Alex Ji for winning Men's Singles C at the <a href="https://www.tournamentsoftware.com/tournament/B5768A3D-A3E7-4677-931E-41D826BA30CA" target="_blank" rel="noopener noreferrer">2022 Bay State Games</a>! Also congratulations to Yao Mekareeya for silver in Men's Singles B, and Sharon Hsia for bronze in Women's Singles B!</p>
+								</div>
+							</div>
+
+							<div class="news-card">
+								<div class="thumb"><img src="im/collegiate-spring-2022.jpg" alt="" /></div>
+								<div class="content">
 									<span class="date">April 10, 2022</span>
-									<h1>2022 Eastern Collegiate tournament</h1>
-								</header>
-								<div class="image main"><img src="im/collegiate-spring-2022.jpg" alt="" /></div>
-								<p>
-									Congratulations to the MIT Badminton team for winning silver medals in Division 1B at the Eastern Collegiate tournament, held at New Jersey Badminton Club on April 10 2022!
-								</p>
-							</section>
-							<section class="post">
-								<header class="major">
+									<h2>2022 Eastern Collegiate Tournament</h2>
+									<p>Congratulations to the MIT Badminton team for winning silver medals in Division 1B at the Eastern Collegiate tournament, held at New Jersey Badminton Club on April 10, 2022!</p>
+								</div>
+							</div>
+
+							<div class="news-card">
+								<div class="thumb"><img src="im/Newton-tournament-spring-2022.jpg" alt="" /></div>
+								<div class="content">
 									<span class="date">March 3, 2022</span>
-									<h1>2022 Newton tournament</h1>
-								</header>
-								<div class="image main"><img src="im/Newton-tournament-spring-2022.jpg" alt="" /></div>
-								<p>
-									Congratulations to Yao Mekareeya for winning 2nd place in Division B Men's Singles, Feng Ying Xing for winning 2nd place in Division C Men's Singles, and Qian Xu and Ziyu Xu for 2nd place in Division C Women's Double in the Newton tournament on March 13 2022!
-								</p>
-							</section>
-							<section class="post">
-								<header class="major">
+									<h2>2022 Newton Tournament</h2>
+									<p>Congratulations to Yao Mekareeya for winning 2nd place in Division B Men's Singles, Feng Ying Xing for 2nd place in Division C Men's Singles, and Qian Xu and Ziyu Xu for 2nd place in Division C Women's Doubles at the Newton tournament on March 13, 2022!</p>
+								</div>
+							</div>
+
+							<div class="news-card">
+								<div class="thumb"><img src="im/cnasa2019.jpg" alt="" /></div>
+								<div class="content">
 									<span class="date">October 5, 2019</span>
-									<h1>2019 CNASA team tournament</h1>
-								</header>
-								<div class="image main"><img src="im/cnasa2019.jpg" alt="" /></div>
-								<p>
-									Congratulations to the Mixed A team (Shawn Chao, Chen Horng Tan, Jeffrey Mei, Tanush Jagdish for a convincing 5-0 win in the 3rd/4th play-off at the CNASA tournament, held at Boston Badminton Club on October 5 2019!
-								</p>
-							</section>
-							<section class="post">
-								<header class="major">
+									<h2>2019 CNASA Team Tournament</h2>
+									<p>Congratulations to the Mixed A team (Shawn Chao, Chen Horng Tan, Jeffrey Mei, Tanush Jagdish) for a convincing 5-0 win in the 3rd/4th play-off at the CNASA tournament, held at Boston Badminton Club on October 5, 2019!</p>
+								</div>
+							</div>
+
+							<div class="news-card">
+								<div class="thumb"><img src="im/BostonOpen2019.jpg" alt="" /></div>
+								<div class="content">
 									<span class="date">May 4, 2019</span>
-									<h1>2019 Boston Open</h1>
-								</header>
-								<div class="image main"><img src="im/BostonOpen2019.jpg" alt="" /></div>
-								<p>
-									Congratulations to Jeffrey Mei and Shawn Chao for reaching the semifinals of Collegiate Men's Doubles at the <a href="https://www.tournamentsoftware.com/sport/winners.aspx?id=691588A2-595B-4C08-B3F3-3137FA16404A">2019 Boston Open</a>! 
-								</p>
-							</section>
-							<section class="post">
-								<header class="major">
+									<h2>2019 Boston Open</h2>
+									<p>Congratulations to Jeffrey Mei and Shawn Chao for reaching the semifinals of Collegiate Men's Doubles at the <a href="https://www.tournamentsoftware.com/sport/winners.aspx?id=691588A2-595B-4C08-B3F3-3137FA16404A" target="_blank" rel="noopener noreferrer">2019 Boston Open</a>!</p>
+								</div>
+							</div>
+
+							<div class="news-card">
+								<div class="thumb"><img src="im/cnasa.jpg" alt="" /></div>
+								<div class="content">
 									<span class="date">November 11, 2018</span>
-									<h1>2018 CNASA team tournament</h1>
-								</header>
-								<div class="image main"><img src="im/cnasa.jpg" alt="" /></div>
-								<p>
-									Congratulations to both the Mixed A (Shawn Chao, Matthew Cotton, Jeffrey Mei, Kathleen Zhu) and the Men's (Vishal Patil, Saurabh Gandhi, Ke Chen, Pawan Bharadwaj, Alex Ji) for taking 2nd place in their respective divisions at the CNASA team tournament, held at MIT on November 11 2018!
-								</p>
-							</section>
-							<section class="post">
-								<header class="major">
+									<h2>2018 CNASA Team Tournament</h2>
+									<p>Congratulations to both the Mixed A (Shawn Chao, Matthew Cotton, Jeffrey Mei, Kathleen Zhu) and the Men's team (Vishal Patil, Saurabh Gandhi, Ke Chen, Pawan Bharadwaj, Alex Ji) for taking 2nd place in their respective divisions at the CNASA team tournament, held at MIT on November 11, 2018!</p>
+								</div>
+							</div>
+
+							<div class="news-card">
+								<div class="thumb"><img src="im/nejo.jpg" alt="" /></div>
+								<div class="content">
 									<span class="date">April 7-8, 2018</span>
-									<h1>New England Junior Open</h1>
-								</header>
-								<div class="image main"><img src="im/nejo.jpg" alt="" /></div>
-								<p>
-									Congratulations to Reetik Sahu (runner-up, Collegiate Boys' Singles), Shawn Chao (champion, Collegiate Boys' Doubles) and Jeffrey Mei (champion, Collegiate Boys' Doubles), at the <a href="https://www.tournamentsoftware.com/sport/winners.aspx?id=87AF7DBE-7FE1-4FA0-A133-734372B6D259">New England Junior Open</a> held at Marblehead High School on April 7-8 2018! 
-								</p>
-							</section>
+									<h2>New England Junior Open</h2>
+									<p>Congratulations to Reetik Sahu (runner-up, Collegiate Boys' Singles), Shawn Chao (champion, Collegiate Boys' Doubles) and Jeffrey Mei (champion, Collegiate Boys' Doubles) at the <a href="https://www.tournamentsoftware.com/sport/winners.aspx?id=87AF7DBE-7FE1-4FA0-A133-734372B6D259" target="_blank" rel="noopener noreferrer">New England Junior Open</a>, held at Marblehead High School on April 7-8, 2018!</p>
+								</div>
+							</div>
+
+						</div>
 
 					</div>
 
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+						<ul><li>&copy; MIT Badminton Club</li></ul>
 					</div>
 
 			</div>

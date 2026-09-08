@@ -14,6 +14,9 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
 			/* Nav accent (matches home page) */
+			#nav {
+				position: relative !important;
+			}
 			#nav .links a {
 				transition: color 0.2s ease;
 			}
@@ -23,6 +26,36 @@
 			#nav .links li.active a {
 				color: #ff5f6d;
 				border-bottom-color: #ff5f6d;
+			}
+
+			.join-btn {
+				position: absolute;
+				right: 1.5em;
+				top: 50%;
+				transform: translateY(-50%);
+				background: #A31F34;
+				color: #ffffff !important;
+				padding: 1rem 2rem;
+				border-radius: 5px;
+				font-size: 0.8em;
+				font-weight: 700;
+				text-decoration: none !important;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+				line-height: 1;
+				transition: background 0.2s ease;
+				border-bottom: none !important;
+			}
+
+			.join-btn:hover {
+				background: #b8253d;
+				color: #ffffff !important;
+			}
+
+			@media (max-width: 736px) {
+				.join-btn {
+					display: none;
+				}
 			}
 
 			/* Leadership page */
@@ -135,10 +168,10 @@
 					<nav id="nav">
 						<ul class="links">
 							<li><a href="index.html">Home</a></li>
-							<li><a href="news.html">News</a></li>
 							<li class="active"><a href="leadership.html">Leadership</a></li>
-							<li><a href="#">Contact</a></li>
+							<li><a href="news.html">News</a></li>
 						</ul>
+						<a href="https://docs.google.com/forms/d/e/1FAIpQLSf1-Em72Odya4hBaUSjalRbm5Xm7yGBwLyVjuFoneuM4ALf_w/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="join-btn">Join Us</a>
 					</nav>
 
 				<!-- Main -->
@@ -146,7 +179,7 @@
 
 						<div class="leadership-header">
 							<h1>Leadership</h1>
-							<p>Meet the officers!</p>
+							<p>Meet our officers!</p>
 						</div>
 
 						<div class="officers">
